@@ -1,0 +1,18 @@
+<project>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.sample.athiththan</groupId>
+    <artifactId>osgi-build-service</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+
+    <url>https://github.com/athiththan11/OSGi-Producer-and-Consumer-Bundle</url>
+
+    <name>osgi-build-service</name>
+
+    <modules>
+        <module>./osgi-fabricator</module>
+        <module>./osgi-shopper</module>
+    </modules>
+
+</project>
