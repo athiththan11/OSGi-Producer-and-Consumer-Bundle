@@ -18,16 +18,11 @@ public class FabricatorServiceComponent {
     protected void activate(ComponentContext context) {
 
         /**
-         * implement a singleton instance on FactFabricator class or create a new
-         * instance inside the activate method and register the service
+         * create a new instance inside the activate method and register the service
          */
 
-        // singleton instance reference and register
-        // context.getBundleContext().registerService(FactFabricator.class.getName(), FactFabricator.getInstance(), null);
-
         // create an instance and register
-        FactFabricator fabricator = new FactFabricator();
-        context.getBundleContext().registerService(FactFabricator.class.getName(), fabricator, null);
+        context.getBundleContext().registerService(FactFabricator.class.getName(), new FactFabricator(), null);
 
         LOGGER.info("OSGI Fabricator :: Fabricator bundle is activated");
     }
